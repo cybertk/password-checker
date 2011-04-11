@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="crack">How long it will be taken to crack my password
+	<string name="title">How long it will be taken to crack your password?
 	</string>
 	<string name="app_name">PasswordChecker</string>
 
+	<!-- we use '`' as a tag for locating -->
 	<string name="result_dict_fmt">
 		Your password is\n
-		`One of the Most Common
-		Passwords`
+		`One of the Most Common Passwords`\n
+		You should probably change it.
 	</string>
-	<string name="result_instant_fmt">Your password will be crack\n`Instantly`</string>
+	<string name="result_instant_fmt">
+		Your password will be crack\n
+		`Instantly`\n
+		You should probably change it.</string>
 	<string name="result_common_fmt">
 		It would take\n
 		`%1$s`
