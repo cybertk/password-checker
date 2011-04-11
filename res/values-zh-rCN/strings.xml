@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="title">破解你的密码需要多长时间？
+	</string>
+	<string name="app_name">PasswordChecker</string>
+
+	<!-- we use '`' as a tag for locating -->
+	<string name="result_dict_fmt">
+		你的密码是\n
+		`常用密码`\n
+		你应该换个密码
+	</string>
+	<string name="result_instant_fmt">
+		你的密码将在\n`瞬间`\n被破解</string>
+	<string name="result_common_fmt">
+		破解你的密码需要\n
+		`%1$s`
+		\n在一个普通的电脑上
+	</string>
+	<string name="about">约</string>
+	<string name="cc">Is This Safe? · Is This Accurate? · How It Works ·
+		Choosing A Secure Password</string>
+
+	<!-- Time Dimension -->
+	<plurals name="second">
+		<item quantity="one">秒</item>
+		<item quantity="other">秒</item>
+	</plurals>
+	<plurals name="minute">
+		<item quantity="one">分钟</item>
+		<item quantity="other">分钟</item>
+	</plurals>
+	<plurals name="hour">
+		<item quantity="one">小时</item>
+		<item quantity="other">小时</item>
+	</plurals>
+	<plurals name="day">
+		<item quantity="one">天</item>
+		<item quantity="other">天</item>
+	</plurals>
+	<plurals name="year">
+		<item quantity="one">年</item>
+		<item quantity="other">年</item>
+	</plurals>
+</resources>
