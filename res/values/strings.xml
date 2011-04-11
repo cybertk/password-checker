@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="crack">How long it will be taken to crack my password
+	</string>
+	<string name="app_name">PasswordChecker</string>
+
+	<string name="result_dict_fmt">
+		Your password is\n
+		`One of the Most Common
+		Passwords`
+	</string>
+	<string name="result_instant_fmt">Your password will be crack\n`Instantly`</string>
+	<string name="result_common_fmt">
+		It would take\n
+		`%1$s`
+		\nfor a Desktop PC to crack
+		your password
+	</string>
+	<string name="about">About</string>
+	<string name="cc">Is This Safe? · Is This Accurate? · How It Works ·
+		Choosing A Secure Password</string>
+
+	<!-- Time Dimension -->
+	<plurals name="second">
+		<item quantity="one">second</item>
+		<item quantity="other">seconds</item>
+	</plurals>
+	<plurals name="minute">
+		<item quantity="one">minute</item>
+		<item quantity="other">minutes</item>
+	</plurals>
+	<plurals name="hour">
+		<item quantity="one">hour</item>
+		<item quantity="other">hours</item>
+	</plurals>
+	<plurals name="day">
+		<item quantity="one">day</item>
+		<item quantity="other">days</item>
+	</plurals>
+	<plurals name="year">
+		<item quantity="one">year</item>
+		<item quantity="other">years</item>
+	</plurals>
+</resources>
