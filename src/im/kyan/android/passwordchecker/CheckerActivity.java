@@ -40,11 +40,14 @@ public class CheckerActivity extends Activity implements TextWatcher {
     
     private TextView mstrView;
     
-    private final double ONE_SECOND = 1;
-    private final double ONE_MINUTE = ONE_SECOND * 60;
-    private final double ONE_HOUR = ONE_MINUTE * 60;
-    private final double ONE_DAY = ONE_HOUR * 24;
-    private final double ONE_YEAR = ONE_DAY * 365.25;
+    private static final double ONE_SECOND = 1;
+    private static final double ONE_MINUTE = ONE_SECOND * 60;
+    private static final double ONE_HOUR = ONE_MINUTE * 60;
+    private static final double ONE_DAY = ONE_HOUR * 24;
+    private static final double ONE_YEAR = ONE_DAY * 365.25;
+    
+    // exasecond, @see http://en.wikipedia.org/wiki/Time
+    private static final double AGE_OF_UNIVERSE = ONE_YEAR * 2E9;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -111,11 +114,16 @@ public class CheckerActivity extends Activity implements TextWatcher {
         }
         // less than 1 s
         else if (strength < ONE_SECOND) {
+            //we use '`' as a tag for locating
             str = getString(
                     R.string.result_common_fmt,
-                    String.format("%9f ", strength)
+                    String.format("`%9f` ", strength)
                             + getResources().getQuantityString(
                                     R.plurals.second, 1));
+        }
+        // more than the age of universe
+        else if (strength > AGE_OF_UNIVERSE) {
+            str = getString(R.string.result_never_fmt);
         }
         // R.string.str_common_fmt
         else {
@@ -140,7 +148,7 @@ public class CheckerActivity extends Activity implements TextWatcher {
                 resDimension = R.plurals.day;
                 strength /= ONE_DAY;
             }
-            // more than 1 year
+            // normal condition, between 1 and age_of_universe years
             else {
                 resDimension = R.plurals.year;
                 strength /= ONE_YEAR;
@@ -154,8 +162,8 @@ public class CheckerActivity extends Activity implements TextWatcher {
                 fmt += getString(R.string.about) + " ";
             }
             
-            // quality
-            fmt += s;
+            // quality, we use '`' as a tag for locating
+            fmt += "`" + getReadableInteger(s) + "`";
             
             // dimension
             fmt += " "
@@ -175,4 +183,26 @@ public class CheckerActivity extends Activity implements TextWatcher {
         
         return spanable;
     }
+    
+    /**
+     * split a long integer with ","
+     * @param l integer be split
+     * @return "," separated string
+     */
+    private static String getReadableInteger(long l) {
+        
+        String integer = Long.toString(l);
+        int sz = integer.length();
+        int i = sz % 3;
+
+        String str = integer.substring(0, (i == 0) ? 3 : i);
+        while (i < sz) {
+            
+            str += "," + integer.substring(i, i + 3);
+            i += 3;
+        }
+        
+        return str;
+    }
+
 }

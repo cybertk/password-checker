@@ -16,11 +16,16 @@
 		You should probably change it.</string>
 	<string name="result_common_fmt">
 		It would take\n
-		`%1$s`
-		\nfor a Desktop PC to crack
-		your password
+		%1$s\n
+		for a Desktop PC to crack
+		your password.
 	</string>
-	<string name="about">About</string>
+	<string name="result_never_fmt">
+		It needs more than\n
+		`the age of the universe`\n
+		to crack your password.
+	</string>
+	<string name="about">about</string>
 	<string name="cc">Is This Safe? · Is This Accurate? · How It Works ·
 		Choosing A Secure Password</string>
 

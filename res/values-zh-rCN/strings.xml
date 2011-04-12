@@ -8,16 +8,20 @@
 	<string name="result_dict_fmt">
 		你的密码是\n
 		`常用密码`\n
-		你应该换个密码
+		考虑换个新密码吧。
 	</string>
 	<string name="result_instant_fmt">
-		你的密码将在\n`瞬间`\n被破解</string>
+		你的密码将在\n`瞬间`\n被破解，考虑换个新密码吧。</string>
 	<string name="result_common_fmt">
-		破解你的密码需要\n
-		`%1$s`
-		\n在一个普通的电脑上
+		在一个普通的电脑上，破解你的密码需要\n
+		%1$s。
 	</string>
-	<string name="about">约</string>
+	<string name="result_never_fmt">
+		破解你的密码需要的时间比\n
+		`宇宙存在的时间`\n
+		还要长，你的密码应该够安全了。
+	</string>
+	<string name="about">大概</string>
 	<string name="cc">Is This Safe? · Is This Accurate? · How It Works ·
 		Choosing A Secure Password</string>
 
