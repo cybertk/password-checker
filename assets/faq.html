@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+ 
+<html lang="en"> 
+ 
+	<head> 
+	
+		<meta charset="utf-8" /> 
+		
+		<title>Frequently Asked Questions &raquo; How Secure Is My Password?</title> 
+	</head>
+	<body>
+		<div id="content" class="top-level section"> 
+			<h1 id="safe">Is This Safe?</h1> 
+			<p>It is actually. I'm not harvesting passwords into an <span style="color:red; text-transform:uppercase;">evil</span> database. Of course that's exactly the sort of thing I would say if I were harvesting them. And it wouldn't be hard to do it: a couple of lines of code and I'd have all your passwords. <span style="text-transform:uppercase">Mwuhahahahahaa!</span> But, to be honest, I don't know what I'd do with them. Make a cake perhaps.</p> 
+			<p>The bit of code that does the calculations is done in JavaScript. And JavaScript is a "client-side" language. That means it runs on <span style="color:green">your</span> computer – not on <span style="color:red">ours</span>. No data ever travels from your computer back to the website. You can check this by loading up the webpage and then turning off your internet connection. You'll still be able to use the website to your heart's content.</p> 
+			<p>However, for the <span style="text-transform:uppercase">super</span>-paranoid among you, you could just type in something a bit like your password rather than your <span style="color:green">actual</span> password. In fact, that's probably a good idea anyway. Just in case I'm lying.</p> 
+			
+			<h1 id="accurate">Is This Accurate?</h1> 
+			<p>It all depends on who's trying to hack your computer and how they're trying to do it. There are many different ways to try and crack a password and this site only does the calculation for one particular sort of hacking attempt: <span style="color:green">The Brute Force Attack</span>.</p> 
+			<p>To be honest, it's more likely that the first thing a hacker would try is a <span style="color:green">Dictionary Attack</span>. This involves trying every word in the dictionary and can be done by a computer in a few seconds. So if your password is just a single word (like "scuttlebutt" or "indubitable") you're probably not very safe.</p> 
+			<p>"Why doesn't the site do a quick check against a dictionary then?", I hear you ask. "Good question", I reply (in interpretative dance). Well, there are two ways I could do that. The first way would be to check the password you type against an online dictionary. But that would involve sending your password over the interwebs, which would be wonderfully insecure. The second way would be to include a full dictionary in the JavaScript file that the site runs on your computer. But that would slow down the site and make the hosting more expensive. So I just don't bother.</p> 
+			<p>Moral of the story? Don't use words out of the dictionary for passwords.</p> 
+			
+			<h1 id="works">How It Works</h1> 
+			<p>It's just a bit of simple maths:</p> 
+			<p style="text-align:center; color:grey;">(<span style="color:green">number of possible characters</span> to the power of <span style="color:green">length of the password</span>) divided by <span style="color:green">calculations per second</span></p> 
+			<p><span style="color:green">Length of the password</span> is nice and easy to work out: it's just the number of characters in your password. For example 'cat' has 3 characters and 'monkey' has 12.</p> 
+			<p>"Monkey has 12?", you ask.</p> 
+			<p>"No it doesn't", I reply, "It's got 6. You should probably learn to count."</p> 
+			<p><span style="color:green">Calculations per second</span> is a bit more of a <span style="color:rgba(0,0,0,0); text-shadow:0 0 3px black;">rough</span> figure. On the site it's set to 10,000,000, which is an approximate number of passwords a regular computer might be able to try every second. But it's going to depend on the computer as well as what the password is for. A lot of sites and programs won't let you try more than three passwords in the space of ten minutes, which would render a brute force attack pretty useless.</p> 
+			<p><span style="color:green">Number of possible characters</span> is a bit more complicated. For alphanumeric characters it's easy enough: there are 26 possible lowercase characters; uppercase adds another 26; digits add another 10. It gets a bit more tricky after that: there are well over a million other symbols that a computer is capable of putting into a text field – e.g. <span style="color:purple">?, &#223;, &#1049;, &#33865;, &#9775;</span>. Not all sites and programs can accept these in password fields and different hacking tools will try different non-alphanumeric characters.</p> 
+			<p>Currently this site first checks against the 13 most common symbols in English:</p> 
+			<p style="color:purple">! @ # $ % ^ , & * ? _ ~ -</p> 
+			<p>It then checks against latin characters, such as é and û, and against cyrillic characters, such as ԓ and Ԗ. Other characters are not currently supported.</p> 
+		</div> 
+		
+		<div class="top-level footer fadey-bits"> 
+			<p>Created by <a class="shc" href="http://www.smallhadroncollider.com/" title="Small Hadron Collider: Website Design (Sheffield, UK)"><img src="/site-design/presentation/css/small-hadron-collider.png" alt="Small Hadron Collider" width="365" height="36" /></a></p> 
+		</div> 
+	</body>
+</html>
