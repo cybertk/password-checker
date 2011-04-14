@@ -1,7 +1,7 @@
 /**
  * 
  */
-package im.kyan.android.crackmypassword;
+package im.kyan.android.passwordchecker;
 
 import android.app.Activity;
 import android.os.Bundle;
