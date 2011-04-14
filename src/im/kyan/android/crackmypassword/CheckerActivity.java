@@ -128,7 +128,7 @@ public class CheckerActivity extends Activity {
         for (String s : links) {
             start = end;
             end = faq.indexOf("\n", start) + 1;
-            mFaqSpan.setSpan(new FaqSpan(s), start, end, 0);
+            mFaqSpan.setSpan(new FaqSpan(s), start, end - 1, 0);
         }
     }
     
