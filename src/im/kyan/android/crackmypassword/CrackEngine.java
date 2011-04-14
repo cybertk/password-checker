@@ -30,7 +30,7 @@
  ** naughty words. Don"t look at it if you"re easily
  ** offended.
  ***************************************************************/
-package im.kyan.android.passwordchecker;
+package im.kyan.android.crackmypassword;
 
 import android.util.Log;
 
