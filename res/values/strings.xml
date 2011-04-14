@@ -26,8 +26,12 @@
 		to crack your password.
 	</string>
 	<string name="about">about</string>
-	<string name="cc">`Is This Safe?` · `Is This Accurate?` · `How It Works?` ·
-		Choosing A Secure Password</string>
+	<string name="cc">
+		Is This Safe?\n
+		Is This Accurate?\n
+		How It Works?\n
+		Choosing A Secure Password\n
+	</string>
 
 	<!-- Time Dimension -->
 	<plurals name="second">
@@ -50,4 +54,7 @@
 		<item quantity="one">year</item>
 		<item quantity="other">years</item>
 	</plurals>
+	
+	<string name="faq_url">file:///android_asset/faq.html</string>
+	<string name="secure_password_url">file:///android_asset/secure_password.html</string>	
 </resources>

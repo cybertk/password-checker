@@ -22,8 +22,12 @@
 		还要长，你的密码应该够安全了。
 	</string>
 	<string name="about">大概</string>
-	<string name="cc">Is This Safe? · Is This Accurate? · How It Works ·
-		Choosing A Secure Password</string>
+	<string name="cc">
+		这个应用安全么?\n
+		准么?\n
+		如何工作的?\n
+		选择使用一个安全的密码\n
+	</string>
 
 	<!-- Time Dimension -->
 	<plurals name="second">
@@ -46,4 +50,7 @@
 		<item quantity="one">年</item>
 		<item quantity="other">年</item>
 	</plurals>
+
+	<string name="faq_url">file:///android_asset/faq.html</string>
+	<string name="secure_password_url">file:///android_asset/secure_password.html</string>	
 </resources>

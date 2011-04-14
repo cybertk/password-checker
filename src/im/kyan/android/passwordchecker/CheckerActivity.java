@@ -123,11 +123,11 @@ public class CheckerActivity extends Activity {
         int end = 0;
         
         String[] links = { FaqActivity.ACTION_SAFE,
-                FaqActivity.ACTION_ACCURATE, FaqActivity.ACTION_HOWTO };
+                FaqActivity.ACTION_ACCURATE, FaqActivity.ACTION_HOWTO,
+                FaqActivity.ACTION_SECURE_PASSWORD };
         for (String s : links) {
-            start = faq.indexOf(mSpanToken, end) + 1;
-            end = faq.indexOf(mSpanToken, start) + 1;
-            Log.d(TAG, start + ":" + end);
+            start = end;
+            end = faq.indexOf("\n", start) + 1;
             mFaqSpan.setSpan(new FaqSpan(s), start, end, 0);
         }
     }
