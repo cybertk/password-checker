@@ -126,7 +126,8 @@ public class CrackEngine {
         double computerTimeInSecs = possibleCombinations
                 / calculationsPerSecond;
         
-        Log.d(TAG, "len: " + length + " comnination: " + possibleCharacters + String.format("secs: %.9f", computerTimeInSecs));
+        Log.d(TAG, "len: " + length + " comnination: " + possibleCharacters
+                + String.format("secs: %.9f", computerTimeInSecs));
         return computerTimeInSecs;
     }
     
