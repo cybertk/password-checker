@@ -2,7 +2,7 @@
 <resources>
 	<string name="title">破解你的密码需要多长时间？
 	</string>
-	<string name="app_name">PasswordChecker</string>
+	<string name="app_name">CrackMyPassword</string>
 
 	<!-- we use '`' as a tag for locating -->
 	<string name="result_dict_fmt">

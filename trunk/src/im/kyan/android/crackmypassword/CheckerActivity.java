@@ -20,7 +20,7 @@
  * Modified:
  * Kyan He <kyan.ql.he@gmail.com> @ Apr 8, 2011
  */
-package im.kyan.android.passwordchecker;
+package im.kyan.android.crackmypassword;
 
 import android.app.Activity;
 import android.content.Intent;
