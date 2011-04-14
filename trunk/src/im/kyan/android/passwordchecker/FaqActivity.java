@@ -15,13 +15,14 @@ public class FaqActivity extends Activity {
     public static final String ACTION_SAFE = "passwordchecker.action.safe";
     public static final String ACTION_ACCURATE = "passwordchecker.action.accurate";
     public static final String ACTION_HOWTO = "passwordchecker.action.howto";
+    public static final String ACTION_SECURE_PASSWORD = "passwordchecker.action.secure_password";
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
         String action = getIntent().getAction();
-        String url = "file:///android_asset/faq.html";
+        String url = getString(R.string.faq_url);
         
         if (ACTION_SAFE.equals(action)) {
             url += "#safe";
@@ -29,6 +30,8 @@ public class FaqActivity extends Activity {
             url += "#accurate";
         } else if (ACTION_HOWTO.equals(action)) {
             url += "#works";
+        } else if (ACTION_SECURE_PASSWORD.equals(action)) {
+            url = getString(R.string.secure_password_url);
         }
         
         WebView wv = new WebView(this);
